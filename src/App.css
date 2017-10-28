@@ -1,0 +1,25 @@
+.App {
+  /* text-align: center; */
+}
+
+.byCategory {
+  margin-top: 2%;
+}
+
+.byCategory > * {
+  background: rgb(245, 241, 241);
+}
+
+.byPrice > * {
+  background: rgb(245, 241, 241);
+}
+
+.byCategory > div > h4 {
+  font-family: Titillium Web; 
+  color: #449320;
+}
+
+.byPrice > div > h4 {
+  font-family: Titillium Web;
+  color: #449320;
+}
