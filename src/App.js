@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
 import './App.css';
-import { Grid, Col, Row } from 'react-bootstrap';
 import TopNav from './TopNav';
 import TopMenu from './TopMenu';
+import PriceGroup from './PriceGroup';
+import React, { Component } from 'react';
 import CarouselView from './CarouselView';
 import CategoryGroup from './CategoryGroup';
-import PriceGroup from './PriceGroup';
+import { Grid, Col, Row } from 'react-bootstrap';
 
 class App extends Component {
   
@@ -25,12 +25,11 @@ class App extends Component {
           <Col md={3} sm={3}>
             <h4>Shop By Category</h4>
             <CategoryGroup />
-          </Col>
-        </Row>
-        <Row className="byPrice">
-          <Col md={3} sm={3}>
             <h4>Refine By Price</h4>
-            <PriceGroup />
+            <PriceGroup className="priceGroup" />
+          </Col>
+          <Col md={9} sm={9}>
+            <ProductListView />
           </Col>
         </Row>
       </Grid>

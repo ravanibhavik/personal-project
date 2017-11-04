@@ -1,5 +1,4 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
 import { Nav, Navbar, NavItem } from 'react-bootstrap';
 import hudson from './hudson.png';
 import { FormGroup, FormControl, Glyphicon} from 'react-bootstrap';
@@ -11,7 +10,7 @@ const TopNav = () => {
     <Navbar>
       <Navbar.Header>
         <Navbar.Brand pullLeft>
-          <a href="#" className="pull-left" ><img src={hudson} alt="" /></a>
+          <a href="#"><img src={hudson} alt="" /></a>
         </Navbar.Brand>
         <Navbar.Toggle />
       </Navbar.Header>
@@ -24,11 +23,13 @@ const TopNav = () => {
           <Button type="submit"><Glyphicon glyph="search"/></Button>
         </Navbar.Form>
       </Nav>
-      <Nav pullRight>
-        <NavItem href="#" eventKey={1}>Contact Us</NavItem>
-        <NavItem href="#" eventKey={2}>Create Account</NavItem>
-        <NavItem href="#" eventKey={3}>Sign In or Create an account</NavItem>
-      </Nav>
+      <Navbar.Collapse>
+        <Nav pullRight>
+          <NavItem href="#" eventKey={1}>Contact Us</NavItem>
+          <NavItem href="#" eventKey={2}>Create Account</NavItem>
+          <NavItem href="#" eventKey={3}>Sign In or Create an account</NavItem>
+        </Nav>
+      </Navbar.Collapse>
     </Navbar>
   )
 }

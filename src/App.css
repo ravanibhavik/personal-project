@@ -23,3 +23,7 @@
   font-family: Titillium Web;
   color: #449320;
 }
+
+.categoryGroup {
+  border-bottom: 2px solid black;
+}
